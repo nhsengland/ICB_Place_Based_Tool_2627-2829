@@ -1,8 +1,8 @@
 #Sets the allocation year that is used to populate dashboard titles
-allocations_year = '2025/26'
+allocations_year = '2026/27 - 2028/29'
 
 #Repo details used for fetching latest commit date and update to data folder
 owner = "nhsengland"
-repo = "ICB_Allocation_Tool_update"
+repo = "ICB_Place_Based_Tool_2627-2829"
 branch = "main"
 folder_path = "data"
