@@ -22,7 +22,7 @@ session data as JSON - [Drag and drop file here].
 
 Please refer to the README.md file on the NHS England GitHub repository for instructions:
 
-https://github.com/nhsengland/ICB_Allocation_Tool_update/blob/main/README.md
+https://github.com/nhsengland/ICB_Place_Based_Tool_2627-2829/blob/main/README.md
 
 Help and Support
 ----------------
