@@ -10,7 +10,7 @@ DESCRIPTION:    Streamlit weighted capitation tool
 CONTRIBUTORS:   Craig Shenton, Jonathan Pearson, Mattia Ficarelli, Samuel Leat, Jennifer Struthers
 CONTACT:        england.revenue-allocations@nhs.net
 CREATED:        2021-12-14
-LAST UPDATED:   2025-10-02
+LAST UPDATED:   2025-10-27
 VERSION:        3.0.1
 """
 # Note that the above updated date refers only to the code for the tool, not source data
@@ -659,7 +659,7 @@ with st.expander("Core Sub Indices", expanded  = True):
 # Drop-down text box with supporting notes
 with st.expander("Relative Weighting of Components"):
     st.markdown(
-        """The relative weighting applied to each of these components are provided in Workbook J.  These weightings are based on modelled estimated expenditure in 2025/26.
+        """The relative weighting applied to each of these components are provided in Workbook J.  These weightings are based on modelled estimated expenditure in 2028/29.
         \n\nThese relative weightings are based on national modelled expenditure, and do not take into consideration variation of weights at the local level.  It is not appropriate to apply these weights to place-level indices that are relative to the ICB, not England.
         """)
 
