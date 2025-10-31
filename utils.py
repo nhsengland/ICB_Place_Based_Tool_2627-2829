@@ -40,7 +40,7 @@ def get_data(path):
             "RCode": "Region code",
             "Region": "Region name",
             "LAD": "LA District code",
-            "LAD name": "LA District name",
+            "LADname": "LA District name",
             "Registered Patients": "GP pop",
             "G&A WP": "Weighted G&A pop",
             "CS WP": "Weighted Community pop",
