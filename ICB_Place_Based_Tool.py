@@ -166,7 +166,10 @@ svg = """
 render_svg(svg)
 
 # Page title, calling the defined year from the config file
-st.title("ICB Place Based Allocation Tool " + config['allocations_year'])
+st.title("DRAFT ICB Place Based Allocation Tool " + config['allocations_year'])
+
+# Draft status message
+st.markdown("**<h3 style='color: red;'>This tool is currently under QA and should not be used.</h3>**", unsafe_allow_html=True)
 
 # Writes date of last update to source data
 st.write(f"""Data last updated: {last_folder_update}""")
