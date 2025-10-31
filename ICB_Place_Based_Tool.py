@@ -697,14 +697,6 @@ with st.expander("Primary Medical Care Sub Indices", expanded  = True):
             place_metric
         )
 
-with st.expander("Primary Care Weighted Populations Update", expanded = True):
-    st.markdown(
-        """Primary care weighted populations have been updated in the place based tool. This is due to the inclusion of an incorrect number of new patient registrations in the calculations which was the result of using a new data source. We have found that that the new registration data originally used in estimating need had two errors:
-        \n\n 1.  Practice moves connected to practice mergers were included.
-        \n\n 2.  The “annual” data included only eleven months of practice moves.
-        \n\n This will have particularly impacted on practices that have been through voluntary mergers and student practice which have high numbers of registrations in September.
-        \n\n These errors have now been corrected. The weighted populations in the place-based tool have been updated to reflect these changes as there were a small number of practices that are substantially affected. ICB allocations will not be updated as the recalculation has a small impact at ICB level and this is also mitigated by convergence policy. Therefore, the practice weighted populations and need indices in the place based tool will be different to those published in workbook K (primary medical care 2025-26)."""
-    )
 
 # Downloads
 # -------------------------------------------------------------------------
