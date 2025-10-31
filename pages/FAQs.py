@@ -4,8 +4,12 @@ from pathlib import Path
 import time
 import toml
 import utils
+import requests
 
 config = toml.load('config.toml')
+
+#Uses the get_latest_folder_update to check last updated date for the FAQ file
+last_file_update = utils.get_latest_folder_update(config['owner'], config['repo'], "pages/FAQs.py", config['branch'])
 
 st.set_page_config(
     page_title="ICB Place Based Allocation Tool FAQs",
@@ -37,14 +41,12 @@ svg = """
 """
 render_svg(svg)
 
+# Header
+# -------------------------------------------------------------------------
 st.title("ICB Place Based Allocation Tool " + config['allocations_year'] + " FAQs")
 
-#Code below uses the date of last modification for the file to create a last updated date.
-script_path = Path(__file__)
-last_modified_time = script_path.stat().st_mtime
-last_modified_date = time.localtime(last_modified_time)
-formatted_date = time.strftime('%d %B %Y', last_modified_date)
-st.write(f"Last updated: {formatted_date}")
+# Writes date of last update to source data
+st.write(f"""Last updated: {last_file_update}""")
 
 with st.expander("What does the tool do?"):
     st.markdown("""
