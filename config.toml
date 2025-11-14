@@ -1,11 +1,15 @@
-#Sets the allocation year that is used to populate dashboard titles
+# Sets the allocation year that is used to populate dashboard titles
 allocations_year = '2026/27 - 2028/29'
 
-#Used for easy updating links in text
+# Hard-coded updated dates to resolve issues with the API
+app_update = "14 November 2025"
+data_update = "14 November 2025"
+
+# Used for easy updating links in text
 repo_url = "https://github.com/nhsengland/ICB_Place_Based_Tool_2627-2829"
 readme_url = "https://github.com/nhsengland/ICB_Place_Based_Tool_2627-2829/blob/main/README.md"
 
-#Repo details used for fetching latest commit date and update to data folder
+# Repo details used for fetching latest commit date and update to data folder
 owner = "nhsengland"
 repo = "ICB_Place_Based_Tool_2627-2829"
 branch = "main"

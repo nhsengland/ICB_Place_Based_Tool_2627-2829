@@ -8,6 +8,10 @@ from decimal import Decimal, ROUND_HALF_UP
 import os
 import requests
 from datetime import datetime
+import toml
+
+#Config file defined
+config = toml.load('config.toml')
 
 
 # Load data and cache
@@ -347,7 +351,7 @@ def get_latest_commit_date(owner, repo, branch):
             return "No commits found."
     # If the API call fails prints the error code
     else:
-        return f"GitHub API error: {response.status_code}"
+        return config['data_update']
     
 #Fetch latest date of commit to main GitHub repo main branch and format it for display in tool
 def get_latest_folder_update(owner, repo, folder_path, branch):
@@ -392,4 +396,4 @@ def get_latest_folder_update(owner, repo, folder_path, branch):
             return f"Error parsing date: {e}"
     # If the API call fails prints the error code
     else:
-        return f"GitHub API error: {response.status_code}"
+        return config['app_update']
