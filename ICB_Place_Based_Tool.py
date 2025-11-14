@@ -168,6 +168,9 @@ render_svg(svg)
 # Page title, calling the defined year from the config file
 st.title("ICB Place Based Allocation Tool " + config['allocations_year'])
 
+# Message about pending 28/29 data
+st.markdown("**<h3>Year 3 (2028/29) data to follow in due course.</h3>**", unsafe_allow_html=True)
+
 # Draft status message
 st.markdown("**<h3 style='color: red;'>This tool is currently under development.</h3>**", unsafe_allow_html=True)
 
