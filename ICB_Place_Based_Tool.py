@@ -798,7 +798,7 @@ with st.expander("Notes", expanded = True):
 
 with st.expander("About the ICB Place Based Tool", expanded = True):
     st.markdown(
-        "This tool is designed to support allocation at places by allowing places to be defined by aggregating GP Practices within an ICB. Please refer to the User Guide for instructions."
+        "This tool is designed to support allocation at places by allowing places to be defined by aggregating GP Practices within an ICB. Please refer to the FAQs for instructions."
     )
     st.markdown("The tool estimates the relative need for places within the ICB.")
     st.markdown(
@@ -809,7 +809,7 @@ with st.expander("About the ICB Place Based Tool", expanded = True):
         "Where *WP* is the weighted population for a given need and *GP* is the GP practice population."
     )
     st.markdown(
-        f"This tool is based on estimated need for 2023/24 and 2024/25 by utilising weighted populations projected from the November 2021 to October 2022 GP Registered practice populations."
+        f"This tool is based on estimated need for 2026/27 to 2028/29 by utilising weighted populations projected from the August 2024 to July 2025 GP Registered practice populations."
     )
     st.markdown(
         "More information on the latest allocations, including contact details, can be found [here](https://www.england.nhs.uk/allocations/)."
