@@ -168,9 +168,6 @@ render_svg(svg)
 # Page title, calling the defined year from the config file
 st.title("ICB Place Based Allocation Tool " + config['allocations_year'])
 
-# Message about pending 28/29 data
-st.markdown("**<h3>Year 3 (2028/29) data to follow in due course.</h3>**", unsafe_allow_html=True)
-
 # Writes date of last update to source data
 st.write(f"""Data last updated: {last_folder_update}""")
 
